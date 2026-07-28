@@ -72,7 +72,7 @@ img { max-width: 100%; display: block; }
 .logo {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 56px;
   color: var(--sage-deep);
   letter-spacing: 0.02em;
 }
