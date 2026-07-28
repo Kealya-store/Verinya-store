@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaelya — [NOM DU PRODUIT]</title>
+<meta name="description" content="Kaelya — livraison rapide en Algérie, paiement à la livraison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======= BARRE ANNONCE ======= -->
+<div class="topbar">
+  <p>Livraison partout en Algérie · Paiement à la livraison · Réponse rapide</p>
+</div>
+
+<!-- ======= EN-TÊTE ======= -->
+<header class="site-header">
+  <div class="logo">Kaelya</div>
+</header>
+
+<!-- ======= 1. ACCROCHE (HERO) ======= -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Nouveau chez Kaelya</p>
+    <h1>[Titre accrocheur du produit — le bénéfice principal en une phrase]</h1>
+    <p class="hero-sub">[Une phrase qui explique simplement ce que fait le produit et pour qui.]</p>
+    <a href="#commander" class="btn btn-primary">Je commande maintenant</a>
+    <div class="hero-trust">
+      <span>✓ Paiement à la livraison</span>
+      <span>✓ Livraison 2–4 jours</span>
+      <span>✓ Retour possible</span>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="hero-image-placeholder">
+      <span>[Photo du produit ici]</span>
+    </div>
+    <div class="price-badge">
+      <span class="price-now">[Prix] DA</span>
+      <span class="price-old">[Ancien prix] DA</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0,12 C150,24 250,0 300,12 C350,24 450,0 600,12" /></svg>
+</div>
+
+<!-- ======= 2. PROBLÈME ======= -->
+<section class="section problem">
+  <h2>[Le problème que vit ton client]</h2>
+  <p>[2-3 phrases qui décrivent la frustration du client avant de connaître le produit — sois précis et concret, pas générique.]</p>
+</section>
+
+<!-- ======= 3. SOLUTION / BÉNÉFICES ======= -->
+<section class="section benefits">
+  <h2>Pourquoi Kaelya</h2>
+  <div class="benefit-grid">
+    <div class="benefit-card">
+      <h3>[Bénéfice 1]</h3>
+      <p>[Explique concrètement ce que ça change pour le client.]</p>
+    </div>
+    <div class="benefit-card">
+      <h3>[Bénéfice 2]</h3>
+      <p>[Explique concrètement ce que ça change pour le client.]</p>
+    </div>
+    <div class="benefit-card">
+      <h3>[Bénéfice 3]</h3>
+      <p>[Explique concrètement ce que ça change pour le client.]</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0,12 C150,0 250,24 300,12 C350,0 450,24 600,12" /></svg>
+</div>
+
+<!-- ======= 4. PREUVES / AVIS ======= -->
+<section class="section testimonials">
+  <h2>Ils ont commandé chez Kaelya</h2>
+  <div class="testimonial-grid">
+    <blockquote>
+      <p>“[Avis client — remplace par un vrai avis dès que tu en as un.]”</p>
+      <cite>— [Prénom], [Wilaya]</cite>
+    </blockquote>
+    <blockquote>
+      <p>“[Avis client 2]”</p>
+      <cite>— [Prénom], [Wilaya]</cite>
+    </blockquote>
+    <blockquote>
+      <p>“[Avis client 3]”</p>
+      <cite>— [Prénom], [Wilaya]</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ======= 5. OFFRE + FORMULAIRE ======= -->
+<section class="section offer" id="commander">
+  <div class="offer-card">
+    <h2>Commande ton [nom du produit]</h2>
+    <p class="offer-price"><span class="price-now">[Prix] DA</span> <span class="price-old">[Ancien prix] DA</span></p>
+    <p class="offer-note">Stock limité · Livraison sous 2 à 4 jours</p>
+
+    <form id="order-form" class="order-form">
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" required placeholder="Ton nom">
+
+      <label for="phone">Numéro de téléphone</label>
+      <input type="tel" id="phone" name="phone" required placeholder="05XX XX XX XX">
+
+      <label for="wilaya">Wilaya</label>
+      <input type="text" id="wilaya" name="wilaya" required placeholder="Ta wilaya">
+
+      <label for="qty">Quantité</label>
+      <select id="qty" name="qty">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary btn-block">Commander via WhatsApp</button>
+    </form>
+    <p class="offer-guarantee">Paiement à la livraison — tu payes seulement quand tu reçois ton colis.</p>
+  </div>
+</section>
+
+<!-- ======= 6. PRODUITS COMPLÉMENTAIRES ======= -->
+<section class="section related">
+  <h2>Ça pourrait aussi te plaire</h2>
+  <div class="related-grid">
+    <a href="#" class="related-card">
+      <div class="related-image-placeholder">[Photo]</div>
+      <h3>[Produit complémentaire 1]</h3>
+      <p>[Prix] DA</p>
+    </a>
+    <a href="#" class="related-card">
+      <div class="related-image-placeholder">[Photo]</div>
+      <h3>[Produit complémentaire 2]</h3>
+      <p>[Prix] DA</p>
+    </a>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0,12 C150,24 250,0 300,12 C350,24 450,0 600,12" /></svg>
+</div>
+
+<!-- ======= 7. FAQ ======= -->
+<section class="section faq">
+  <h2>Questions fréquentes</h2>
+  <div class="faq-list">
+    <details>
+      <summary>Combien de temps prend la livraison ?</summary>
+      <p>[Réponse — ex : 2 à 4 jours selon la wilaya.]</p>
+    </details>
+    <details>
+      <summary>Comment je paye ?</summary>
+      <p>Paiement à la livraison (cash), directement au livreur.</p>
+    </details>
+    <details>
+      <summary>Je peux retourner le produit ?</summary>
+      <p>[Réponse — précise ta politique de retour.]</p>
+    </details>
+    <details>
+      <summary>Comment vous contacter ?</summary>
+      <p>Par WhatsApp au [ton numéro], on répond vite.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ======= PIED DE PAGE ======= -->
+<footer class="site-footer">
+  <div class="logo">Kaelya</div>
+  <p>Livraison dans toute l'Algérie · Paiement à la livraison</p>
+  <p class="footer-contact">WhatsApp : [ton numéro]</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
