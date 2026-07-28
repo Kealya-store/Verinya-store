@@ -62,30 +62,17 @@ img { max-width: 100%; display: block; }
   padding: 64px 24px;
 }
 
-/* ---------- Topbar ---------- */
-.topbar {
-  background: var(--sage-deep);
-  color: var(--ivory);
-}
-.topbar p {
-  margin: 0;
-  text-align: center;
-  font-size: 0.82rem;
-  letter-spacing: 0.03em;
-  padding: 8px 16px;
-  color: var(--ivory-deep);
-}
-
 /* ---------- Header ---------- */
 .site-header {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 24px 24px 0;
+  padding: 40px 24px 0;
+  text-align: center;
 }
 .logo {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   color: var(--sage-deep);
   letter-spacing: 0.02em;
 }
