@@ -1,4 +1,4 @@
-# Site Kaelya — Guide de démarrage
+# Site Verinya — Guide de démarrage
 
 ## 1. Ce que contient ce dossier
 - `index.html` → le contenu et la structure de la page
