@@ -24,7 +24,7 @@ if (form) {
     const qty = document.getElementById("qty").value;
 
     const message =
-      `Bonjour Kaelya, je veux commander :\n` +
+      `Bonjour Verinya, je veux commander :\n` +
       `Produit : ${PRODUCT_NAME}\n` +
       `Quantité : ${qty}\n` +
       `Nom : ${name}\n` +
