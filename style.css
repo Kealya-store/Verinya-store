@@ -349,3 +349,75 @@ details p { margin-top: 10px; margin-bottom: 0; }
   html { scroll-behavior: auto; }
   .btn-primary:hover { transform: none; }
 }
+
+/* ===== MENU ===== */
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#2E3A2D;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#B06E58;
+}
+
+.btn-menu{
+    background:#2E3A2D;
+    color:white !important;
+    padding:12px 22px;
+    border-radius:30px;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        gap:15px;
+        font-size:14px;
+    }
+
+}
+
+/* ===== Catégories ===== */
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.category-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.category-card:hover{
+transform:translateY(-6px);
+}
+
+.category-card h3{
+margin-bottom:15px;
+}
+
+.category-card a{
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+font-weight:bold;
+color:#B06E58;
+}
