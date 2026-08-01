@@ -5,7 +5,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finaliser ma commande | Verinya Store</title>
+<title>Contact | Verinya Store</title>
 <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -29,15 +29,28 @@
 
 </header>
 
+<section class="catalog-hero">
+
+    <div class="container">
+
+        <h1>Nous contacter</h1>
+
+        <p>
+            Une question sur un produit, une livraison ou une commande ?
+            Écris-nous, on te répond rapidement sur WhatsApp.
+        </p>
+
+    </div>
+
+</section>
+
 <section class="section">
 
     <div class="offer-card">
 
-        <h2>Finaliser ma commande</h2>
+        <h2>Envoyer un message</h2>
 
-        <div id="recap"></div>
-
-        <form class="order-form" id="commande-form">
+        <form class="order-form" id="contact-form">
 
             <label for="nom">Nom complet</label>
             <input type="text" id="nom" required>
@@ -45,24 +58,14 @@
             <label for="telephone">Numéro de téléphone</label>
             <input type="tel" id="telephone" placeholder="05XX XX XX XX" required>
 
-            <label for="ville">Wilaya / Ville</label>
-            <input type="text" id="ville" required>
-
-            <label for="adresse">Adresse de livraison</label>
-            <input type="text" id="adresse" required>
-
-            <label for="note">Note (optionnel)</label>
-            <textarea id="note" placeholder="Précision supplémentaire..."></textarea>
+            <label for="message">Ton message</label>
+            <textarea id="message" placeholder="Écris ta question ici..." required></textarea>
 
             <button type="submit" class="btn btn-primary btn-block">
-                Envoyer la commande sur WhatsApp
+                Envoyer sur WhatsApp
             </button>
 
         </form>
-
-        <p style="font-size:0.85rem; margin-top:16px; text-align:center;">
-            Paiement à la livraison. Ta commande sera confirmée directement par WhatsApp.
-        </p>
 
     </div>
 
@@ -74,9 +77,8 @@
     <p class="footer-contact">WhatsApp : [ton numéro]</p>
 </footer>
 
-<script src="assets/js/products.js"></script>
 <script src="assets/js/config.js"></script>
-<script src="assets/js/commande.js"></script>
+<script src="assets/js/contact.js"></script>
 
 </body>
 </html>
