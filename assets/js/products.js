@@ -1,3 +1,14 @@
+// ==========================================================
+// PRODUITS VERINYA STORE
+// Pour ajouter un produit : copie un bloc {...} et modifie-le.
+// Pour changer les couleurs/tailles d'UN produit précis, ajoute-lui
+// ses propres champs "couleurs" et/ou "tailles" (sinon les valeurs
+// par défaut ci-dessous sont utilisées).
+// ==========================================================
+
+const DEFAULT_COULEURS = ["Blanc", "Noir", "Gris", "Bleu marine", "Rouge", "Vert"];
+const DEFAULT_TAILLES = ["XS", "S", "M", "L", "XL", "XXL"];
+
 const products = [
 
 {
@@ -55,12 +66,21 @@ description:"Tricot style polo."
 },
 
 {
-id:"hoodie",
-nom:"Hoodie",
+id:"hoodie-classique",
+nom:"Hoodie Classique",
 categorie:"hoodies",
 prix:"À partir de 2900 DA",
 image:"assets/img/hoodie.jpg",
-description:"Hoodie personnalisable."
+description:"Hoodie personnalisable, capuche simple."
+},
+
+{
+id:"hoodie-zippe",
+nom:"Hoodie Zippé",
+categorie:"hoodies",
+prix:"À partir de 3200 DA",
+image:"assets/img/hoodie-zippe.jpg",
+description:"Hoodie avec fermeture zippée, personnalisable."
 },
 
 {
@@ -109,12 +129,21 @@ description:"Dossard fermé personnalisable."
 },
 
 {
-id:"sport",
+id:"dossard-sport",
 nom:"Dossard Sport",
 categorie:"sport",
 prix:"À partir de 700 DA",
 image:"assets/img/sport.jpg",
-description:"Dossard pour clubs sportifs."
+description:"Dossard pour clubs et événements sportifs."
+},
+
+{
+id:"maillot-sport",
+nom:"Maillot Personnalisable",
+categorie:"sport",
+prix:"À partir de 1900 DA",
+image:"assets/img/maillot.jpg",
+description:"Maillot de sport personnalisable, floqué au nom de l'équipe."
 }
 
 ];

@@ -932,3 +932,21 @@ margin-top:30px;
 padding-top:20px;
 
 }
+/*=========================
+FICHE PRODUIT - options perso (masquées par défaut)
+=========================*/
+#custom-options{
+    display:none;
+}
+#custom-options.visible{
+    display:block;
+}
+
+/*=========================
+PAGE CATEGORIE - lien carte produit
+=========================*/
+a.product-card{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}

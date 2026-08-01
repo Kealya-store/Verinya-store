@@ -1,34 +1,28 @@
-const filters = document.querySelectorAll(".filter");
-const cards = document.querySelectorAll(".product-card");
+// ==========================================================
+// CATALOGUE : affichage + filtres
+// Nécessite products.js et render.js chargés AVANT ce fichier
+// ==========================================================
 
-filters.forEach(button=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-button.addEventListener("click",()=>{
+  const grid = document.getElementById("catalog-grid");
+  if (!grid) return; // on n'est pas sur la page catalogue
 
-filters.forEach(btn=>btn.classList.remove("active"));
+  // Affichage initial : tous les produits
+  renderProducts("catalog-grid", null);
 
-button.classList.add("active");
+  const filters = document.querySelectorAll(".filter");
 
-const value = button.dataset.filter;
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
 
-cards.forEach(card=>{
+      filters.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
 
-if(value==="all"){
+      const value = button.dataset.filter;
+      renderProducts("catalog-grid", value === "all" ? null : value);
 
-card.style.display="block";
-
-}else if(card.dataset.category===value){
-
-card.style.display="block";
-
-}else{
-
-card.style.display="none";
-
-}
-
-});
-
-});
+    });
+  });
 
 });

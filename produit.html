@@ -5,9 +5,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Produit | Verinya Store</title>
-
 <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -16,178 +14,108 @@
 
 <header class="site-header">
 
-<div class="container">
+    <div class="container">
 
-<a href="index.html" class="logo">
+        <a href="index.html" class="logo">VERINYA STORE</a>
 
-VERINYA STORE
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
 
-</a>
-
-<nav class="navbar">
-
-<a href="index.html">Accueil</a>
-
-<a href="catalogue.html">Catalogue</a>
-
-<a href="#">Contact</a>
-
-</nav>
-
-</div>
+    </div>
 
 </header>
 
 <section class="product-page">
 
-<div class="container product-layout">
+    <div class="container product-layout">
 
-<div class="product-gallery">
+        <div class="product-gallery">
+            <img id="main-image" src="assets/img/tshirt.jpg" alt="Produit">
+        </div>
 
-<img
-id="main-image"
-src="assets/img/tshirt.jpg"
-alt="Produit">
+        <div class="product-info">
 
-</div>
+            <h1 id="product-title">Chargement...</h1>
 
-<div class="product-info">
+            <p id="product-description"></p>
 
-<h1 id="product-title">
+            <h2 class="price" id="product-price"></h2>
 
-T-Shirt Classique
+            <label for="couleur">Couleur</label>
+            <select id="couleur"></select>
 
-</h1>
+            <label for="taille">Taille</label>
+            <select id="taille"></select>
 
-<p id="product-description">
+            <h3>Choisissez votre version</h3>
 
-Produit disponible en version d'origine ou personnalisée.
+            <label>
+                <input type="radio" name="version" value="origine" checked>
+                Produit d'origine
+            </label>
 
-</p>
+            <br><br>
 
-<h2 class="price">
+            <label>
+                <input type="radio" name="version" value="personnalise">
+                Produit personnalisé
+            </label>
 
-À partir de 0 DA
+            <div id="custom-options">
 
-</h2>
+                <hr>
 
-<h3>Choisissez votre version</h3>
+                <h3>Personnalisation</h3>
 
-<label>
+                <label for="technique">Technique</label>
+                <select id="technique">
+                    <option>Broderie</option>
+                    <option>DTF</option>
+                    <option>Sérigraphie</option>
+                    <option>Flocage</option>
+                </select>
 
-<input
-type="radio"
-name="version"
-value="origine"
-checked>
+                <label for="position">Position</label>
+                <select id="position">
+                    <option>Poitrine</option>
+                    <option>Dos</option>
+                    <option>Manche</option>
+                    <option>Devant complet</option>
+                </select>
 
-Produit d'origine
+                <label for="texte-perso">Texte à ajouter (optionnel)</label>
+                <input type="text" id="texte-perso" placeholder="Votre texte">
 
-</label>
+                <label for="logo-description">Décris ton logo (tu pourras l'envoyer en photo dans WhatsApp)</label>
+                <textarea id="logo-description" placeholder="Ex: logo rond bleu et blanc avec le nom de l'entreprise"></textarea>
 
-<br><br>
+            </div>
 
-<label>
+            <label for="quantite">Quantité</label>
+            <input type="number" id="quantite" value="1" min="1">
 
-<input
-type="radio"
-name="version"
-value="personnalise">
+            <button id="buy-btn" class="btn-product whatsapp-btn" style="border:none; width:100%; cursor:pointer;">
+                Acheter
+            </button>
 
-Produit personnalisé
+        </div>
 
-</label>
-
-<div id="custom-options">
-
-<hr>
-
-<h3>Personnalisation</h3>
-
-<label>
-
-Technique
-
-</label>
-
-<select>
-
-<option>Broderie</option>
-
-<option>DTF</option>
-
-<option>Sérigraphie</option>
-
-<option>Flocage</option>
-
-</select>
-
-<label>
-
-Position
-
-</label>
-
-<select>
-
-<option>Poitrine</option>
-
-<option>Dos</option>
-
-<option>Manche</option>
-
-<option>Devant complet</option>
-
-</select>
-
-<label>
-
-Texte à ajouter
-
-</label>
-
-<input
-type="text"
-placeholder="Votre texte">
-
-<label>
-
-Description du logo
-
-</label>
-
-<textarea
-placeholder="Décrivez votre logo"></textarea>
-
-<label>
-
-Quantité
-
-</label>
-
-<input
-type="number"
-value="1"
-min="1">
-
-</div>
-
-<a
-href="#"
-class="btn-product whatsapp-btn">
-
-Commander sur WhatsApp
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<script src="assets/js/script.js"></script>
+<footer class="site-footer">
+    <div class="logo">Verinya</div>
+    <p>Livraison dans toute l'Algérie · Paiement à la livraison</p>
+    <p class="footer-contact">WhatsApp : [ton numéro]</p>
+</footer>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/produit.js"></script>
 
 </body>
-
 </html>

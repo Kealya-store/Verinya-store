@@ -1,42 +1,83 @@
-# Site Verinya — Guide de démarrage
+# Site Verinya Store — Guide
 
-## 1. Ce que contient ce dossier
-- `index.html` → le contenu et la structure de la page
-- `style.css` → le design (couleurs, mise en page)
-- `script.js` → le bouton de commande qui envoie vers WhatsApp
-
-## 2. Personnaliser AVANT de publier
-Ouvre `index.html` et remplace tout ce qui est entre crochets `[...]` par tes vraies infos :
-- `[NOM DU PRODUIT]`, `[Titre accrocheur...]`, `[Prix] DA`, etc.
-- Les avis clients `[Avis client]` — laisse-les vides ou supprime-les tant que tu n'as pas de vrais avis (ne jamais inventer un faux avis, ça casse la confiance si un client s'en rend compte)
-
-Ouvre `script.js` et modifie en haut du fichier :
-```js
-const WHATSAPP_NUMBER = "213XXXXXXXXX";   // ton numéro, format 213 + numéro sans le 0
-const PRODUCT_NAME = "[NOM DU PRODUIT]";  // le nom réel de ton produit
+## 1. Structure du site
+```
+verinya-site/
+├── index.html          → page d'accueil
+├── catalogue.html       → tous les produits, avec filtres par catégorie
+├── produit.html          → fiche produit (couleur, taille, personnalisation)
+├── commande.html         → formulaire de livraison + envoi de la commande sur WhatsApp
+├── assets/
+│   ├── css/style.css
+│   ├── js/
+│   │   ├── products.js   → la liste de tous tes produits (prix, description, image, couleurs, tailles)
+│   │   ├── config.js     → ton numéro WhatsApp
+│   │   ├── render.js     → affiche les produits automatiquement (catalogue + catégories)
+│   │   ├── script.js     → gère les filtres du catalogue
+│   │   ├── produit.js    → gère la fiche produit (couleur, taille, perso)
+│   │   └── commande.js   → récap commande + envoi WhatsApp avec les infos de livraison
+│   └── img/              → tes photos produits (à ajouter)
+└── pages/
+    ├── tshirts.html
+    ├── polos.html
+    ├── tricots.html
+    ├── hoodies.html
+    ├── cuisine.html
+    ├── travail.html
+    └── sport.html
 ```
 
-Remplace les zones `[Photo du produit ici]` par de vraies images :
-- Mets tes photos dans le dossier `images/`
-- Dans `index.html`, remplace le `<div class="hero-image-placeholder">...</div>` par
-  `<img src="images/ton-produit.jpg" alt="[NOM DU PRODUIT]">`
+## 2. À faire avant de publier
 
-## 3. Mettre le site en ligne gratuitement (GitHub Pages)
+**Ton numéro WhatsApp**
+Ouvre `assets/js/config.js` et remplace :
+```js
+whatsappNumber: "213XXXXXXXXX"
+```
+par ton vrai numéro (format 213 + numéro sans le 0).
 
-1. Va sur **github.com** et crée un compte (si pas déjà fait)
-2. Clique sur **New repository**, nomme-le par exemple `kaelya-store`, coche "Public", clique **Create repository**
-3. Sur la page du dépôt, clique **Add file → Upload files**, glisse les fichiers `index.html`, `style.css`, `script.js` et le dossier `images/`, puis **Commit changes**
-4. Va dans **Settings → Pages**
-5. Dans "Branch", choisis `main` et clique **Save**
-6. Attends 1-2 minutes, ton site est en ligne à l'adresse :
-   `https://TON-PSEUDO.github.io/kaelya-store/`
+**Tes photos produits**
+Mets tes images dans `assets/img/` avec exactement les noms utilisés dans
+`assets/js/products.js` (ex: `tshirt.jpg`, `polo.jpg`, `hoodie.jpg`...).
+Sans ces images, les cartes produits afficheront une image cassée.
 
-## 4. Plus tard (optionnel)
-Une fois que tu as des ventes régulières, tu pourras acheter un vrai nom de domaine (`kaelya.com`, `.dz`, `.store`...) et le connecter à GitHub Pages dans les paramètres du dépôt (**Settings → Pages → Custom domain**).
+**Tes produits**
+Pour ajouter, modifier ou supprimer un produit, tu n'as qu'un seul fichier à
+toucher : `assets/js/products.js`. Toutes les pages (catalogue, catégories,
+fiche produit) se mettent à jour automatiquement à partir de ce fichier.
+
+Champs obligatoires par produit :
+- `id` → identifiant unique, sans espace (ex: `"tshirt-classique"`)
+- `nom`, `categorie`, `prix`, `image`, `description`
+
+La `categorie` doit être une de : `tshirts`, `polos`, `tricots`, `hoodies`,
+`cuisine`, `travail`, `sport` (sinon le produit n'apparaîtra pas sur sa page
+catégorie).
+
+## 3. Comment ça marche
+- Le **catalogue** et les **pages catégories** ne contiennent aucune carte
+  produit écrite en dur : elles sont générées automatiquement en JavaScript
+  à partir de `products.js`.
+- Cliquer sur une carte produit ouvre `produit.html?id=...` qui va chercher
+  le bon produit et affiche ses infos.
+- Sur la fiche produit, choisir "Produit personnalisé" fait apparaître les
+  options (technique, position, texte, logo). Le bouton "Commander sur
+  WhatsApp" ouvre WhatsApp avec un message pré-rempli contenant le produit,
+  la version, la quantité et les options choisies.
+
+## 4. Mettre le site en ligne (GitHub Pages)
+1. Va sur **github.com**, crée un compte si besoin
+2. **New repository** → nomme-le (ex: `verinya-store`) → Public → **Create repository**
+3. **Add file → Upload files**, glisse tout le contenu de ce dossier
+   (`index.html`, `catalogue.html`, `produit.html`, `README.md`, `assets/`, `pages/`)
+4. **Commit changes**
+5. **Settings → Pages** → Branch: `main` → **Save**
+6. Ton site sera en ligne à :
+   `https://TON-PSEUDO.github.io/verinya-store/`
 
 ## 5. Ce qu'il reste à faire de ton côté
-- [ ] Choisir le produit
-- [ ] Écrire le vrai texte (accroche, bénéfices, FAQ)
-- [ ] Ajouter les vraies photos
-- [ ] Mettre ton vrai numéro WhatsApp
+- [ ] Ajouter ton numéro WhatsApp dans `config.js`
+- [ ] Ajouter tes vraies photos dans `assets/img/`
+- [ ] Relire les prix dans `products.js`
+- [ ] Remplacer `hero.png` par une vraie photo/bannière sur la page d'accueil
 - [ ] Publier sur GitHub Pages

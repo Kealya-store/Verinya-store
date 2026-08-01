@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Catalogue | Verinya Store</title>
-
 <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-
 <body>
 
 <header class="site-header">
 
-<div class="container">
+    <div class="container">
 
-<button class="filter active" data-filter="all">Tous</button>
+        <a href="index.html" class="logo">VERINYA STORE</a>
 
-<button class="filter" data-filter="tshirts">T-Shirts</button>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
 
-<button class="filter" data-filter="polos">Polos</button>
-
-<button class="filter" data-filter="tricots">Tricots</button>
-
-<button class="filter" data-filter="hoodies">Hoodies</button>
-
-<button class="filter" data-filter="cuisine">Cuisine</button>
-
-<button class="filter" data-filter="travail">Travail</button>
-
-<button class="filter" data-filter="sport">Sport</button>
-
-</div>
+    </div>
 
 </header>
 
 <section class="catalog-hero">
 
-<div class="container">
+    <div class="container">
 
-<h1>Notre Catalogue</h1>
+        <h1>Notre Catalogue</h1>
 
-<p>
+        <p>
+            Découvrez tous nos vêtements professionnels,
+            personnalisables ou non.
+        </p>
 
-Découvrez tous nos vêtements professionnels,
-personnalisables ou non.
-
-</p>
-
-</div>
+    </div>
 
 </section>
 
 <section class="catalog-filters">
 
-<div class="container">
+    <div class="container">
 
-<button class="filter active">Tous</button>
+        <button class="filter active" data-filter="all">Tous</button>
+        <button class="filter" data-filter="tshirts">T-Shirts</button>
+        <button class="filter" data-filter="polos">Polos</button>
+        <button class="filter" data-filter="tricots">Tricots</button>
+        <button class="filter" data-filter="hoodies">Hoodies</button>
+        <button class="filter" data-filter="cuisine">Cuisine</button>
+        <button class="filter" data-filter="travail">Travail</button>
+        <button class="filter" data-filter="sport">Sport</button>
 
-<button class="filter">T-Shirts</button>
-
-<button class="filter">Polos</button>
-
-<button class="filter">Tricots</button>
-
-<button class="filter">Hoodies</button>
-
-<button class="filter">Cuisine</button>
-
-<button class="filter">Travail</button>
-
-<button class="filter">Sport</button>
-
-</div>
+    </div>
 
 </section>
 
 <section class="catalog-products">
 
-<div class="container">
+    <div class="container">
 
-<div class="catalog-grid" id="catalog-grid">
-</div>
+        <div class="catalog-grid" id="catalog-grid">
+        </div>
+
+    </div>
 
 </section>
 
 <footer class="site-footer">
-
-<div class="container">
-
-<p>© 2026 VERINYA STORE</p>
-
-</div>
-
+    <div class="logo">Verinya</div>
+    <p>Livraison dans toute l'Algérie · Paiement à la livraison</p>
+    <p class="footer-contact">WhatsApp : [ton numéro]</p>
 </footer>
 
+<script src="assets/js/products.js"></script>
+<script src="assets/js/render.js"></script>
 <script src="assets/js/script.js"></script>
 
 </body>
-
 </html>
