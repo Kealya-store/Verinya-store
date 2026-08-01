@@ -13,13 +13,13 @@
 <body>
 
 <!-- ======= EN-TÊTE ======= -->
-<<header class="site-header">
+<header class="site-header">
 
     <div class="container">
 
-        <div class="logo">
-            <a href="index.html">VERINYA STORE</a>
-        </div>
+        <a href="index.html" class="logo">
+            VERINYA STORE
+        </a>
 
         <nav class="navbar">
 
@@ -27,19 +27,19 @@
 
             <a href="#categories">Produits</a>
 
-            <a href="#services">Services</a>
+            <a href="#services">Personnalisation</a>
 
-            <a href="#about">À propos</a>
+            <a href="#about">Réalisations</a>
 
             <a href="#contact">Contact</a>
 
-            <a href="#" class="btn-menu">Demander un devis</a>
+            <a href="#" class="btn-menu">
+                Demander un devis
+            </a>
 
         </nav>
 
     </div>
-
-</header>
 
 </header>
 
@@ -48,40 +48,46 @@
 
     <div class="hero-copy">
 
-        <p class="eyebrow">VERINYA STORE</p>
+        <span class="eyebrow">
+            VERINYA STORE
+        </span>
 
         <h1>
             Vêtements professionnels<br>
-            & Personnalisation textile
+            personnalisables pour<br>
+            entreprises, associations<br>
+            et clubs sportifs
         </h1>
 
         <p class="hero-sub">
-            Découvrez notre gamme de vêtements professionnels et sportifs,
+
+            Nous réalisons des vêtements professionnels de qualité,
             disponibles en version d'origine ou entièrement personnalisés
-            selon vos besoins.
+            avec votre logo, votre texte ou votre identité visuelle.
+
         </p>
 
-        <a href="#categories" class="btn btn-primary">
-            Découvrir nos produits
-        </a>
+        <div class="hero-buttons">
+
+            <a href="#categories" class="btn btn-primary">
+                Découvrir nos produits
+            </a>
+
+            <a href="#commande" class="btn btn-secondary">
+                Demander un devis
+            </a>
+
+        </div>
 
     </div>
 
     <div class="hero-media">
 
-        <div class="hero-image-placeholder">
-
-            <h2>Nos catégories</h2>
-
-            <p>👕 T-shirts</p>
-            <p>👔 Polos</p>
-            <p>🧶 Tricots</p>
-            <p>🧥 Hoodies</p>
-            <p>🍳 Cuisine</p>
-            <p>🦺 Travail</p>
-            <p>🏃 Sport</p>
-
-        </div>
+        <img
+            src="assets/img/hero.png"
+            alt="Verinya Store"
+            class="hero-image"
+        >
 
     </div>
 
@@ -92,55 +98,187 @@
 </div>
 
 <!-- ======= 2. PROBLÈME ======= -->
-<section class="section" id="categories">
+<section id="categories" class="categories">
 
-<h2>Nos catégories</h2>
+    <div class="container">
 
-<div class="category-grid">
+        <div class="section-title">
+            <h2>Nos catégories</h2>
+            <p>
+                Choisissez la catégorie qui correspond à votre activité.
+                Tous nos produits sont disponibles en version d'origine
+                ou entièrement personnalisés.
+            </p>
+        </div>
 
-<div class="category-card">
-<h3>👕 T-shirts</h3>
-<p>T-shirts classiques et Oversize.</p>
-<a href="#">Voir les produits</a>
-</div>
+        <div class="categories-grid">
 
-<div class="category-card">
-<h3>👔 Polos</h3>
-<p>Polos manches courtes et longues.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/tshirts.html" class="category-card">
+                <img src="assets/img/tshirt.jpg" alt="T-shirts">
+                <h3>T-Shirts</h3>
+                <p>Classiques & Oversize</p>
+            </a>
 
-<div class="category-card">
-<h3>🧶 Tricots</h3>
-<p>Tricots simples et polos.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/polos.html" class="category-card">
+                <img src="assets/img/polo.jpg" alt="Polos">
+                <h3>Polos</h3>
+                <p>Manches courtes & longues</p>
+            </a>
 
-<div class="category-card">
-<h3>🧥 Hoodies</h3>
-<p>Hoodies et sweats personnalisables.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/tricots.html" class="category-card">
+                <img src="assets/img/tricot.jpg" alt="Tricots">
+                <h3>Tricots</h3>
+                <p>Pulls & Gilets</p>
+            </a>
 
-<div class="category-card">
-<h3>🍳 Cuisine</h3>
-<p>Tabliers et chemises de cuisine.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/hoodies.html" class="category-card">
+                <img src="assets/img/hoodie.jpg" alt="Hoodies">
+                <h3>Hoodies</h3>
+                <p>Avec ou sans fermeture</p>
+            </a>
 
-<div class="category-card">
-<h3>🦺 Travail</h3>
-<p>Gilets et dossards professionnels.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/cuisine.html" class="category-card">
+                <img src="assets/img/cuisine.jpg" alt="Cuisine">
+                <h3>Cuisine</h3>
+                <p>Tabliers & Chemises</p>
+            </a>
 
-<div class="category-card">
-<h3>🏃 Sport</h3>
-<p>Dossards ouverts et fermés.</p>
-<a href="#">Voir les produits</a>
-</div>
+            <a href="pages/travail.html" class="category-card">
+                <img src="assets/img/travail.jpg" alt="Travail">
+                <h3>Travail</h3>
+                <p>Gilets & Dossards</p>
+            </a>
 
-</div>
+            <a href="pages/sport.html" class="category-card">
+                <img src="assets/img/sport.jpg" alt="Sport">
+                <h3>Sport</h3>
+                <p>Équipes & Clubs</p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="advantages">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Pourquoi choisir Verinya Store ?</h2>
+            <p>Nous accompagnons les entreprises, associations, restaurants et clubs sportifs avec des vêtements de qualité.</p>
+        </div>
+
+        <div class="advantages-grid">
+
+            <div class="advantage-card">
+                <h3>✔ Produit d'origine</h3>
+                <p>Achetez nos vêtements sans personnalisation.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>🎨 Personnalisation</h3>
+                <p>Logo, texte, numéro, image ou design selon votre demande.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>🚚 Livraison</h3>
+                <p>Livraison rapide partout en Algérie.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h3>💬 Devis gratuit</h3>
+                <p>Recevez rapidement un devis personnalisé.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products-home">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Nos produits</h2>
+            <p>
+                Tous nos vêtements sont disponibles en version d'origine
+                ou personnalisée.
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <h3>👕 T-Shirts</h3>
+                <ul>
+                    <li>T-Shirt Classique</li>
+                    <li>T-Shirt Oversize</li>
+                </ul>
+                <a href="pages/tshirts.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>👔 Polos</h3>
+                <ul>
+                    <li>Polo Simple</li>
+                    <li>Polo Manches Longues</li>
+                </ul>
+                <a href="pages/polos.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>🧶 Tricots</h3>
+                <ul>
+                    <li>Tricot Simple</li>
+                    <li>Tricot Polo</li>
+                </ul>
+                <a href="pages/tricots.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>🧥 Hoodies</h3>
+                <ul>
+                    <li>Avec capuche</li>
+                    <li>Sans capuche</li>
+                </ul>
+                <a href="pages/hoodies.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>🍳 Cuisine</h3>
+                <ul>
+                    <li>Tablier</li>
+                    <li>Chemise de cuisine</li>
+                </ul>
+                <a href="pages/cuisine.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>🦺 Travail</h3>
+                <ul>
+                    <li>Gilet</li>
+                    <li>Dossard fermé</li>
+                    <li>Dossard ouvert</li>
+                </ul>
+                <a href="pages/travail.html" class="btn-product">Voir</a>
+            </div>
+
+            <div class="product-card">
+                <h3>🏃 Sport</h3>
+                <ul>
+                    <li>Dossards</li>
+                    <li>Équipements sportifs</li>
+                </ul>
+                <a href="pages/sport.html" class="btn-product">Voir</a>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -148,98 +286,9 @@
   <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0,12 C150,0 250,24 300,12 C350,0 450,24 600,12" /></svg>
 </div>
 
-<!-- ======= 4. PREUVES / AVIS ======= -->
-<section class="section testimonials">
-  <h2>Ils ont commandé chez Verinya</h2>
-  <div class="testimonial-grid">
-    <blockquote>
-      <p>“[Avis client — remplace par un vrai avis dès que tu en as un.]”</p>
-      <cite>— [Prénom], [Wilaya]</cite>
-    </blockquote>
-    <blockquote>
-      <p>“[Avis client 2]”</p>
-      <cite>— [Prénom], [Wilaya]</cite>
-    </blockquote>
-    <blockquote>
-      <p>“[Avis client 3]”</p>
-      <cite>— [Prénom], [Wilaya]</cite>
-    </blockquote>
-  </div>
-</section>
-
-<!-- ======= 5. OFFRE + FORMULAIRE ======= -->
-<section class="section offer" id="commander">
-  <div class="offer-card">
-    <h2>Commande ton [nom du produit]</h2>
-    <p class="offer-price"><span class="price-now">[Prix] DA</span> <span class="price-old">[Ancien prix] DA</span></p>
-    <p class="offer-note">Stock limité · Livraison sous 2 à 4 jours</p>
-
-    <form id="order-form" class="order-form">
-      <label for="name">Nom complet</label>
-      <input type="text" id="name" name="name" required placeholder="Ton nom">
-
-      <label for="phone">Numéro de téléphone</label>
-      <input type="tel" id="phone" name="phone" required placeholder="05XX XX XX XX">
-
-      <label for="wilaya">Wilaya</label>
-      <input type="text" id="wilaya" name="wilaya" required placeholder="Ta wilaya">
-
-      <label for="qty">Quantité</label>
-      <select id="qty" name="qty">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-
-      <button type="submit" class="btn btn-primary btn-block">Commander via WhatsApp</button>
-    </form>
-    <p class="offer-guarantee">Paiement à la livraison — tu payes seulement quand tu reçois ton colis.</p>
-  </div>
-</section>
-
-<!-- ======= 6. PRODUITS COMPLÉMENTAIRES ======= -->
-<section class="section related">
-  <h2>Ça pourrait aussi te plaire</h2>
-  <div class="related-grid">
-    <a href="#" class="related-card">
-      <div class="related-image-placeholder">[Photo]</div>
-      <h3>[Produit complémentaire 1]</h3>
-      <p>[Prix] DA</p>
-    </a>
-    <a href="#" class="related-card">
-      <div class="related-image-placeholder">[Photo]</div>
-      <h3>[Produit complémentaire 2]</h3>
-      <p>[Prix] DA</p>
-    </a>
-  </div>
-</section>
-
 <div class="divider" aria-hidden="true">
   <svg viewBox="0 0 600 24" preserveAspectRatio="none"><path d="M0,12 C150,24 250,0 300,12 C350,24 450,0 600,12" /></svg>
 </div>
-
-<!-- ======= 7. FAQ ======= -->
-<section class="section faq">
-  <h2>Questions fréquentes</h2>
-  <div class="faq-list">
-    <details>
-      <summary>Combien de temps prend la livraison ?</summary>
-      <p>[Réponse — ex : 2 à 4 jours selon la wilaya.]</p>
-    </details>
-    <details>
-      <summary>Comment je paye ?</summary>
-      <p>Paiement à la livraison (cash), directement au livreur.</p>
-    </details>
-    <details>
-      <summary>Je peux retourner le produit ?</summary>
-      <p>[Réponse — précise ta politique de retour.]</p>
-    </details>
-    <details>
-      <summary>Comment vous contacter ?</summary>
-      <p>Par WhatsApp au [ton numéro], on répond vite.</p>
-    </details>
-  </div>
-</section>
 
 <!-- ======= PIED DE PAGE ======= -->
 <footer class="site-footer">

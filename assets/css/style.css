@@ -470,3 +470,347 @@ color:#B06E58;
     padding:12px 22px;
     border-radius:8px;
 }
+
+/*======================
+HERO
+======================*/
+
+.hero{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:70px;
+
+padding:80px 8%;
+
+min-height:80vh;
+
+}
+
+.hero-copy{
+
+flex:1;
+
+}
+
+.hero-copy h1{
+
+font-size:58px;
+
+line-height:1.15;
+
+margin:20px 0;
+
+color:#222;
+
+}
+
+.hero-sub{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:35px;
+
+max-width:650px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn-secondary{
+
+background:#fff;
+
+color:#B06E58;
+
+border:2px solid #B06E58;
+
+padding:14px 28px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.hero-media{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+max-width:600px;
+
+width:100%;
+
+}
+
+/*==========================
+CATEGORIES
+==========================*/
+
+.categories{
+    padding:100px 0;
+    background:#f8f8f8;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.categories-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.category-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#222;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.category-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.category-card h3{
+    padding:20px 20px 5px;
+    font-size:24px;
+}
+
+.category-card p{
+    padding:0 20px 25px;
+    color:#777;
+}
+
+/*==========================
+AVANTAGES
+==========================*/
+
+.advantages{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.advantages-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.advantage-card{
+    background:#fff;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.3s;
+}
+
+.advantage-card:hover{
+    transform:translateY(-8px);
+}
+
+.advantage-card h3{
+    margin-bottom:15px;
+    color:#B06E58;
+}
+
+.advantage-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/*==========================
+PRODUITS
+==========================*/
+
+.products-home{
+    padding:100px 0;
+    background:#f8f8f8;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card h3{
+    color:#B06E58;
+    margin-bottom:15px;
+}
+
+.product-card ul{
+    padding-left:20px;
+    margin-bottom:25px;
+}
+
+.product-card li{
+    margin-bottom:10px;
+}
+
+.btn-product{
+    display:inline-block;
+    background:#B06E58;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-product:hover{
+    background:#955844;
+}
+
+/*=========================
+CATALOGUE
+=========================*/
+
+.catalog-hero{
+
+padding:80px 0;
+
+text-align:center;
+
+background:#f8f8f8;
+
+}
+
+.catalog-hero h1{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+.catalog-hero p{
+
+font-size:20px;
+
+color:#666;
+
+}
+
+.catalog-filters{
+
+padding:40px 0;
+
+}
+
+.catalog-filters .container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+.filter{
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+background:#eee;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.filter.active{
+
+background:#B06E58;
+
+color:white;
+
+}
+
+.catalog-products{
+
+padding:80px 0;
+
+background:#fafafa;
+
+}
+
+.catalog-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
