@@ -814,3 +814,29 @@ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 
 }
+
+.catalog-grid img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.badge-group{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+    flex-wrap:wrap;
+}
+
+.badge{
+    background:#ececec;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.badge-custom{
+    background:#B06E58;
+    color:#fff;
+}
