@@ -840,3 +840,95 @@ gap:30px;
     background:#B06E58;
     color:#fff;
 }
+
+/*=========================
+PAGE PRODUIT
+=========================*/
+
+.product-page{
+
+padding:80px 0;
+
+}
+
+.product-layout{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:start;
+
+}
+
+.product-gallery img{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+.product-info h1{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.price{
+
+color:#B06E58;
+
+margin:20px 0;
+
+}
+
+.product-info select,
+
+.product-info input,
+
+.product-info textarea{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0 20px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+}
+
+.whatsapp-btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+background:#25D366;
+
+color:#fff;
+
+padding:15px 28px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+#custom-options{
+
+margin-top:30px;
+
+padding-top:20px;
+
+}
