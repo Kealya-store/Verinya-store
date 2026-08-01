@@ -1,51 +1,65 @@
 // ==========================================================
-// AFFICHAGE DES PRODUITS
-// Utilisé par catalogue.html ET par toutes les pages
-// dans /pages/ (tshirts.html, polos.html, etc.)
+// VERINYA STORE - Génération automatique des produits
 // ==========================================================
 
-// Détecte si on est dans le dossier /pages/ pour corriger les liens
+// Détermine le chemin de base
 function getBasePath() {
-  return window.location.pathname.includes("/pages/") ? "../" : "";
+    return window.location.pathname.includes("/pages/")
+        ? "../"
+        : "";
 }
 
-// Construit une carte produit cliquable
+// Génère une carte produit
 function createProductCard(product) {
-  const base = getBasePath();
 
-  const card = document.createElement("a");
-  card.href = base + "produit.html?id=" + product.id;
-  card.className = "product-card";
-  card.dataset.category = product.categorie;
+    const base = getBasePath();
 
-  card.innerHTML = `
-    <img src="${base}${product.image}" alt="${product.nom}">
-    <h3>${product.nom}</h3>
-    <p>${product.description}</p>
-    <div class="badge-group">
-      <span class="badge">${product.prix}</span>
-      <span class="badge badge-custom">Personnalisable</span>
-    </div>
-  `;
+    return `
+        <a href="${base}produit.html?id=${product.id}" class="product-card">
 
-  return card;
+            <img src="${base}${product.image}" alt="${product.nom}">
+
+            <h3>${product.nom}</h3>
+
+            <p>${product.description}</p>
+
+            <div class="badge-group">
+
+                <span class="badge">
+                    ${product.prix}
+                </span>
+
+                ${
+                    product.personnalisable
+                    ? `<span class="badge badge-custom">
+                        Personnalisable
+                       </span>`
+                    : ""
+                }
+
+            </div>
+
+        </a>
+    `;
 }
 
-// Affiche les produits dans un conteneur, avec filtre optionnel par catégorie
-function renderProducts(containerId, categoryFilter) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
+// Affiche les produits
+function renderProducts(containerId, categorie = null) {
 
-  container.innerHTML = "";
+    const container = document.getElementById(containerId);
 
-  const list = categoryFilter
-    ? products.filter(p => p.categorie === categoryFilter)
-    : products;
+    if (!container) return;
 
-  if (list.length === 0) {
-    container.innerHTML = "<p>Aucun produit disponible pour le moment.</p>";
-    return;
-  }
+    let liste = products;
 
-  list.forEach(p => container.appendChild(createProductCard(p)));
+    if (categorie) {
+        liste = products.filter(p => p.categorie === categorie);
+    }
+
+    container.innerHTML = "";
+
+    liste.forEach(product => {
+        container.innerHTML += createProductCard(product);
+    });
+
 }
