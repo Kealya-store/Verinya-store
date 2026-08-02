@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (personnalisation) texte += `Personnalisation : ${personnalisation}\n`;
     if (delai) texte += `Délai souhaité : ${delai}\n`;
 
-      openWhatsapp(texte); // défini dans config.js (vérifie que le numéro est configuré)
+    const numero = (typeof SITE_CONFIG !== "undefined") ? SITE_CONFIG.whatsappNumber : "213XXXXXXXXX";
+    const lien = `https://wa.me/${numero}?text=${encodeURIComponent(texte)}`;
+
+    window.open(lien, "_blank");
   });
 
 });

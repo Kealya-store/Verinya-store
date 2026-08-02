@@ -96,7 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (note) message += `Note : ${note}\n`;
       message += `\nPaiement à la livraison.`;
 
-      openWhatsapp(message); // défini dans config.js (vérifie que le numéro est configuré)
+      const numero = (typeof SITE_CONFIG !== "undefined") ? SITE_CONFIG.whatsappNumber : "213XXXXXXXXX";
+      const lien = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
+
+      window.open(lien, "_blank");
     });
   }
 
