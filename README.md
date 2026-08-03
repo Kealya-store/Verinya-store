@@ -15,7 +15,8 @@ verinya-site/
 │   │   ├── render.js     → affiche les produits automatiquement (catalogue + catégories)
 │   │   ├── script.js     → gère les filtres du catalogue
 │   │   ├── produit.js    → gère la fiche produit (couleur, taille, perso)
-│   │   └── commande.js   → récap commande + envoi WhatsApp avec les infos de livraison
+│   │   ├── commande.js   → récap commande + envoi WhatsApp avec les infos de livraison
+│   │   └── footer.js     → affiche le vrai numéro WhatsApp dans le pied de page (à partir de config.js)
 │   └── img/              → tes photos produits (à ajouter)
 └── pages/
     ├── tshirts.html
