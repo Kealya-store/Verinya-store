@@ -6,5 +6,5 @@
 // Exemple : si ton numéro est 0551 23 45 67 -> "213551234567"
 
 const SITE_CONFIG = {
-  whatsappNumber: "213XXXXXXXXX"
+  whatsappNumber: "213552357678"
 };
