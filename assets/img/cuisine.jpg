@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-<rect width="400" height="400" fill="#F7F3EC"/>
-<rect x="100" y="120" width="200" height="160" rx="20" fill="#FFFFFF" stroke="#C98A76" stroke-width="2"/><rect x="120" y="200" width="160" height="40" rx="8" fill="#2E3A2D" opacity="0.1"/><rect x="100" y="120" width="200" height="40" rx="20" fill="none" stroke="#C98A76" stroke-width="2"/><text x="200" y="220" font-family="Work Sans, sans-serif" font-size="18" font-weight="600" fill="#2E3A2D" text-anchor="middle">Cuisine</text><text x="200" y="245" font-family="Work Sans, sans-serif" font-size="14" fill="#55524B" text-anchor="middle">Tablier & Chemise</text>
-</svg>
