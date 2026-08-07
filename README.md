@@ -83,3 +83,4 @@ catégorie).
 - [ ] Remplacer `hero.png` par une vraie photo/bannière sur la page d'accueil
 - [ ] Publier sur GitHub Pages
 
+
